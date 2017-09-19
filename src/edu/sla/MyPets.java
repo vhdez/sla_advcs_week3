@@ -3,7 +3,7 @@ package edu.sla;
 public class MyPets {
 
     public static void main(String[] args) {
-        System.out.println("Mr. Hernandez wuz here.")
+        System.out.println("Mr. Hernandez wuz here.");
 
         System.out.println("Meow! Why do I exist? End my misery! -Sam");
         // I have 3 pets.
