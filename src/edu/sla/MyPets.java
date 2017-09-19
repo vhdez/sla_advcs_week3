@@ -3,7 +3,11 @@ package edu.sla;
 public class MyPets {
 
     public static void main(String[] args) {
+        System.out.println("Mr. Hernandez wuz here.");
 
+        System.out.println("Meow! Why do I exist? End my misery! -Sam");
+        // I have 3 pets.
+        // The 1st pet is a dog named Rufus.
         Dog rufus = new Dog();
         rufus.age = 3;
         rufus.name = "Rufus";
