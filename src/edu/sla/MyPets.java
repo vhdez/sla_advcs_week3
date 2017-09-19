@@ -27,6 +27,18 @@ public class MyPets {
         ralph.name = "Ralph";
         ralph.eatsDryFood = false;
 
+        //Eleanor's 1st pet
+        Cat lola = new Cat();
+        lola.age = 7;
+        lola.name = "Lola";
+        lola.eatsDryFood = true;
+
+        //Eleanor's 2nd pet
+        Cat jolene = new Cat();
+        jolene.age = 5;
+        jolene.name = "Jolene";
+        jolene.eatsDryFood = true;
+
         // Tell the pets to say hi.
         System.out.println("SAY HI PETS!");
         rufus.sayHi();
@@ -41,6 +53,10 @@ public class MyPets {
         tully.describe();
         System.out.println();
         ralph.describe();
+        System.out.println();
+        lola.describe();
+        System.out.println();
+        jolene.describe();
         System.out.println();
 
         int totalPetsAge = rufus.getAge() + tully.getAge() + ralph.getAge();
