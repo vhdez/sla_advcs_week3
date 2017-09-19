@@ -27,11 +27,27 @@ public class MyPets {
         ralph.name = "Ralph";
         ralph.eatsDryFood = false;
 
+        Cat oreo = new Cat();
+        oreo.age = 3;
+        oreo.name = "Oreo";
+        oreo.eatsDryFood = true;
+
+        GoodBoy stonk = new GoodBoy();
+        stonk.name = "Stonk";
+        stonk.speaks = true;
+
+        GoodBoy tarusk = new GoodBoy();
+        tarusk.name = "Tarusk";
+        tarusk.speaks = false;
+
         // Tell the pets to say hi.
         System.out.println("SAY HI PETS!");
         rufus.sayHi();
         tully.sayHi();
         ralph.sayHi();
+        oreo.sayHi();
+        stonk.sayHi();
+        tarusk.sayHi();
         System.out.println();
 
         // Tell the pets to describe themselves.
@@ -42,6 +58,12 @@ public class MyPets {
         System.out.println();
         ralph.describe();
         System.out.println();
+        oreo.describe();
+        System.out.println();
+
+        System.out.println("ANY ADVICE FOR OUR USER?");
+        stonk.giveAdvice();
+        tarusk.giveAdvice();
 
         int totalPetsAge = rufus.getAge() + tully.getAge() + ralph.getAge();
         System.out.println("My pets have lived a total of " + totalPetsAge + " human years.");
