@@ -88,10 +88,6 @@ public class MyPets {
         System.out.println();
         oreo.describe();
         System.out.println();
-
-        System.out.println("ANY ADVICE FOR OUR USER?");
-        stonk.giveAdvice();
-        tarusk.giveAdvice();
         lola.describe();
         System.out.println();
         jolene.describe();
@@ -101,6 +97,9 @@ public class MyPets {
         flutter.describe();
         System.out.println();
 
+        System.out.println("ANY ADVICE FOR OUR USER?");
+        stonk.giveAdvice();
+        tarusk.giveAdvice();
 
         int totalPetsAge = rufus.getAge() + tully.getAge() + ralph.getAge() + lola.getAge() + jolene.getAge() + flutter.getAge();
         System.out.println("My pets have lived a total of " + totalPetsAge + " human years.");
