@@ -39,11 +39,21 @@ public class MyPets {
         jolene.name = "Jolene";
         jolene.eatsDryFood = true;
 
+        //pet rock
+        rock veronica = new rock();
+        veronica.texture = "smooth";
+        veronica.color = "rainbow";
+        veronica.name = "Veronica";
+        veronica.size = "small";
+
         // Tell the pets to say hi.
         System.out.println("SAY HI PETS!");
         rufus.sayHi();
         tully.sayHi();
         ralph.sayHi();
+        lola.sayHi();
+        jolene.sayHi();
+        veronica.sayHi();
         System.out.println();
 
         // Tell the pets to describe themselves.
@@ -58,8 +68,10 @@ public class MyPets {
         System.out.println();
         jolene.describe();
         System.out.println();
+        veronica.describe();
+        System.out.println();
 
-        int totalPetsAge = rufus.getAge() + tully.getAge() + ralph.getAge();
+        int totalPetsAge = rufus.getAge() + tully.getAge() + ralph.getAge() + lola.getAge() + jolene.getAge();
         System.out.println("My pets have lived a total of " + totalPetsAge + " human years.");
     }
 }
