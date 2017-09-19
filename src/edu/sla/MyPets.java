@@ -10,6 +10,11 @@ public class MyPets {
         System.out.println("I will eat your knees\nVery\nVery\nSlowly -CJ");
         // I have 3 pets.
         // The 1st pet is a dog named Rufus.
+        Pony flutter = new Pony();
+        flutter.age = 18;
+        flutter.name = "FlutterShy";
+        flutter.eatsFriendship = false;
+
         Dog rufus = new Dog();
         rufus.age = 3;
         rufus.name = "Rufus";
@@ -70,6 +75,7 @@ public class MyPets {
         lola.sayHi();
         jolene.sayHi();
         veronica.sayHi();
+        flutter.sayHi();
         System.out.println();
 
         // Tell the pets to describe themselves.
@@ -92,8 +98,11 @@ public class MyPets {
         System.out.println();
         veronica.describe();
         System.out.println();
+        flutter.describe();
+        System.out.println();
 
-        int totalPetsAge = rufus.getAge() + tully.getAge() + ralph.getAge() + lola.getAge() + jolene.getAge();
+
+        int totalPetsAge = rufus.getAge() + tully.getAge() + ralph.getAge() + lola.getAge() + jolene.getAge() + flutter.getAge();
         System.out.println("My pets have lived a total of " + totalPetsAge + " human years.");
     }
 }
