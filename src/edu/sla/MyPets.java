@@ -4,6 +4,8 @@ public class MyPets {
 
     public static void main(String[] args) {
         System.out.println("Mr. Hernandez wuz here.");
+        System.out.println("Meow! Why do I exist? End my misery! -Sam");
+        System.out.println("stonk is better than all of these pets -Eleanor");
         System.out.println("CJ was here boiiii");
         // I have 3 pets.
         // The 1st pet is a dog named Rufus.
