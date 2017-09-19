@@ -3,6 +3,8 @@ package edu.sla;
 public class MyPets {
 
     public static void main(String[] args) {
+        System.out.println("Mr. Hernandez wuz here.")
+
         System.out.println("CJ was here boiiii");
         // I have 3 pets.
         // The 1st pet is a dog named Rufus.
