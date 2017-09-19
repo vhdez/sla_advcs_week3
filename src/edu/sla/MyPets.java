@@ -3,9 +3,9 @@ package edu.sla;
 public class MyPets {
 
     public static void main(String[] args) {
-        System.out.println("Mr. Hernandez wuz here.")
-        System.out.println("Ayo A to the L to the EX Gotcha at the coda");
-
+        System.out.println("Mr. Hernandez wuz here.");
+        System.out.println("Meow! Why do I exist? End my misery! -Sam");
+        System.out.println("stonk is better than all of these pets -Eleanor");
         // I have 3 pets.
         // The 1st pet is a dog named Rufus.
         Dog rufus = new Dog();
