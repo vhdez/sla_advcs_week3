@@ -1,5 +1,5 @@
 package edu.sla;
-
+//CJ's class
 public class GoodBoy {
     String name;
     boolean speaks;

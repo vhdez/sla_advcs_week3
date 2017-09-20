@@ -32,15 +32,18 @@ public class MyPets {
         ralph.name = "Ralph";
         ralph.eatsDryFood = false;
 
+        //CJ's cat
         Cat oreo = new Cat();
         oreo.age = 3;
         oreo.name = "Oreo";
         oreo.eatsDryFood = true;
 
+        //CJ's GoodBoy1
         GoodBoy stonk = new GoodBoy();
         stonk.name = "Stonk";
         stonk.speaks = true;
 
+        //CJ's GoodBoy2
         GoodBoy tarusk = new GoodBoy();
         tarusk.name = "Tarusk";
         tarusk.speaks = false;
