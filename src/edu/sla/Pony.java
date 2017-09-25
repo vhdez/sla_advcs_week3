@@ -1,17 +1,18 @@
 package edu.sla;
 
-public class Pony {
-    int age;
-    String name;
-    boolean eatsFriendship;
+class Pony extends Pet {
+    private boolean eatsFriendship;
 
-    void sayHi() {System.out.println("Uh, hello (pony noises) my name is " + name + ".");}
+    Pony(boolean doesEatFriendship, int age, String name) {
+        super(age, name);
+        eatsFriendship = doesEatFriendship;
+    }
 
-    int getAge() {return age;}
+    void sayHi() {System.out.println("Uh, hello (pony noises) my name is " + getName() + ".");}
 
     void describe() {
-        System.out.println("Im a pony named " + name + "!");
-        System.out.println("I am " + age + ".");
+        System.out.println("Im a pony named " + getName() + "!");
+        System.out.println("I am " + getAge() + ".");
         if (eatsFriendship) {
             System.out.println("I eat plenty of Friendship!");
         } else {

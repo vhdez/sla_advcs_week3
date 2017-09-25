@@ -1,21 +1,20 @@
 package edu.sla;
 
-public class Cat {
-    int age;
-    String name;
-    boolean eatsDryFood;
+class Cat extends Pet {
+    private boolean eatsDryFood;
 
-    void sayHi() {
-        System.out.println("Meow!  My name is " + name + ".");
+    Cat(boolean doesEatDryFood, int age, String name) {
+        super(age, name);
+        eatsDryFood = doesEatDryFood;
     }
 
-    int getAge() {
-        return age;
+    void sayHi() {
+        System.out.println("Meow!  My name is " + getName() + ".");
     }
 
     void describe() {
-        System.out.println("I'm a Cat named " + name + ".");
-        System.out.println("I'm " + age + " human years old.");
+        System.out.println("I'm a Cat named " + getName() + ".");
+        System.out.println("I'm " + getAge() + " human years old.");
         if (eatsDryFood) {
             System.out.println("I eat dry food.");
         } else {

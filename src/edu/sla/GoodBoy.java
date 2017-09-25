@@ -1,16 +1,20 @@
 package edu.sla;
 //CJ's class
-public class GoodBoy {
-    String name;
-    boolean speaks;
+class GoodBoy extends Pet {
+    private boolean speaks;
+
+    GoodBoy(boolean doesSpeak, String name) {
+        super(name);
+        speaks = doesSpeak;
+    }
 
     void sayHi() {
-        if(speaks) System.out.println("Greetings, I am " + name + ".");
-        else System.out.println("*it's name is " + name + "*");
+        if(speaks) System.out.println("Greetings, I am " + getName() + ".");
+        else System.out.println("*it's name is " + getName() + "*");
     }
 
     void giveAdvice() {
-        if(speaks) System.out.println(name + ": Don't eat glue.");
-        else System.out.println("*" + name + " grunts in a seemingly helpful way. you feel inspired*");
+        if(speaks) System.out.println(getName() + ": Don't eat glue.");
+        else System.out.println("*" + getName() + " grunts in a seemingly helpful way. you feel inspired*");
     }
 }
