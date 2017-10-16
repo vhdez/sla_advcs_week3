@@ -6,9 +6,12 @@ class NamelessPet extends Pet {
         super(myAge);
     }
 
-    void describe() {
-        System.out.println("I'm a Pet of unknown type.");
-        System.out.println("I'm " + getAge() + " human years old.");
+    public void describe() {
+        System.out.println(description());
+    }
+
+    public String description() {
+        return "I'm a Pet of unknown type.\nI'm " + getAge() + " human years old.";
     }
 
 }

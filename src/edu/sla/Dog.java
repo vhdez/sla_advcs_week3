@@ -8,17 +8,20 @@ class Dog extends Pet {
         eatsDryFood = doesEatDryFood;
     }
 
-    void sayHi() {
-        System.out.println("Woof!  My name is " + getName() + ".");
+    public void sayHi() {
+        System.out.println(hiMessage());
     }
 
-    void describe() {
-        System.out.println("I'm a Dog named " + getName() + ".");
-        System.out.println("I'm " + getAge()*7 + " dog years old.");
-        if (eatsDryFood) {
-            System.out.println("I eat dry food.");
-        } else {
-            System.out.println("I eat wet food.");
-        }
+    public void describe() {
+        System.out.println(description());
     }
+
+    public String hiMessage() {
+        return "Woof!  My name is " + getName() + ".";
+    }
+
+    public String description() {
+        return "I'm a Dog named " + getName() + ".\nI'm " + getAge()*7 + " dog years old.\n" + (eatsDryFood ? "I eat dry food." : "I eat wet food.");
+    }
+
 }

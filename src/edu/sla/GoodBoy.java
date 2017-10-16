@@ -8,13 +8,18 @@ class GoodBoy extends Pet {
         speaks = doesSpeak;
     }
 
-    void sayHi() {
-        if(speaks) System.out.println("Greetings, I am " + getName() + ".");
-        else System.out.println("*it's name is " + getName() + "*");
+    public void sayHi() {
+        System.out.println(hiMessage());
     }
 
-    void giveAdvice() {
+    public void giveAdvice() {
         if(speaks) System.out.println(getName() + ": Don't eat glue.");
         else System.out.println("*" + getName() + " grunts in a seemingly helpful way. you feel inspired*");
     }
+
+    public String hiMessage() {
+        return (speaks ? "Greetings, I am " + getName() + "." : "*it's name is " + getName() + "*");
+
+    }
+
 }

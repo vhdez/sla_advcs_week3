@@ -12,13 +12,20 @@ class rock extends Pet {
         texture = myTexture;
     }
 
-    void sayHi() {
-        System.out.println("Don't take me for granite! My name is " + getName() + ".");
+    public void sayHi() {
+        System.out.println(hiMessage());
     }
 
-    void describe() {
-        System.out.println("I'm a rock named " + getName() + ".");
-        System.out.println("I am " + size + ".");
-        System.out.println("I am " + texture + " and " + color + ".");
+    public void describe() {
+        System.out.println(description());
     }
+
+    public String hiMessage() {
+        return "Don't take me for granite! My name is " + getName() + ".";
+    }
+
+    public String description() {
+        return "I'm a rock named " + getName() + ".\n" + "I am " + size + ".\n" + "I am " + texture + " and " + color + ".";
+    }
+
 }

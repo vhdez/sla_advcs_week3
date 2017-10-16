@@ -1,6 +1,6 @@
 package edu.sla;
 
-class Pet {
+class Pet implements Displayable {
     private int myAge;
     private String myName;
 
@@ -25,16 +25,24 @@ class Pet {
         return myName;
     }
 
-    void sayHi() {
+    public void sayHi() {
+        System.out.println(hiMessage());
+    }
+
+    public void describe() {
+        System.out.println(description());
+    }
+
+    public String hiMessage() {
         if (myName == null) {
-            System.out.println("[GENERIC] Hi, what's my name?");
+            return "[GENERIC] Hi, what's my name?";
         } else {
-            System.out.println("[GENERIC] Hi, my name is " + myName);
+            return "[GENERIC] Hi, my name is " + myName;
         }
     }
 
-    void describe() {
-        System.out.println("[GENERIC] Hi, I'm a pet.");
-        System.out.println("[GENERIC] I'm " + myAge + " human years old.");
+    public String description() {
+        return "[GENERIC] Hi, I'm a pet.  I'm " + myAge + " human years old.";
     }
+
 }

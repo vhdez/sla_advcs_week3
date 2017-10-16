@@ -8,15 +8,18 @@ class Pony extends Pet {
         eatsFriendship = doesEatFriendship;
     }
 
-    void sayHi() {System.out.println("Uh, hello (pony noises) my name is " + getName() + ".");}
+    public void sayHi() {System.out.println(hiMessage());}
 
-    void describe() {
-        System.out.println("Im a pony named " + getName() + "!");
-        System.out.println("I am " + getAge() + ".");
-        if (eatsFriendship) {
-            System.out.println("I eat plenty of Friendship!");
-        } else {
-            System.out.println("I'm allergic to Friendship...");
-        }
+    public void describe() {
+        System.out.println(description());
     }
+
+    public String hiMessage() {
+        return "Uh, hello (pony noises) my name is " + getName() + ".";
+    }
+
+    public String description() {
+        return "Im a pony named " + getName() + "!\nI am " + getAge() + ".\n" + (eatsFriendship ? "I eat plenty of Friendship!" : "I'm allergic to Friendship...");
+    }
+
 }
